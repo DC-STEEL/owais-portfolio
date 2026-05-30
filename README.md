@@ -211,12 +211,4 @@ This project is open source and available under the MIT License.
 
 Feel free to fork this repository and use it as a template for your own portfolio!
 
-## 📧 Contact
-
-- **Email**: mirakar101@gmail.com
-- **Phone**: +91 70396 76785
-- **Location**: Based in India
-
----
-
 Made with ❤️ by Owais Mirakar
