@@ -58,16 +58,6 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
       span: 'col-span-1',
     },
-    {
-      id: 4,
-      title: 'Full-Stack Portfolio',
-      description: 'Responsive modern portfolio website',
-      fullDescription: 'A modern, highly responsive personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion. Features include glassmorphism design, dark mode toggle, scroll-triggered animations, filterable project gallery, and interactive contact form with validation.',
-      tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
-      category: 'frontend',
-      image: 'https://images.unsplash.com/photo-1460925895917-adf4198f848e?w=500&h=300&fit=crop',
-      span: 'col-span-2',
-    },
   ]
 
   const filteredProjects = activeFilter === 'all' 
@@ -78,7 +68,6 @@ const Projects = () => {
     { value: 'all', label: 'All Projects' },
     { value: 'odoo', label: 'Odoo Development' },
     { value: 'ml', label: 'Machine Learning' },
-    { value: 'frontend', label: 'Frontend' },
   ]
 
   const containerVariants = {
@@ -117,7 +106,7 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
-            Explore a curated selection of my work across Odoo development, ML, and frontend engineering
+            Explore a curated selection of my work across Odoo development and machine learning
           </p>
         </motion.div>
 
