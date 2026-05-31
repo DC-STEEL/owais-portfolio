@@ -74,7 +74,7 @@ const Skills = () => {
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
         >
-          {skillCategories.map((category, idx) => (
+          {skillCategories.map((category) => (
             <motion.div
               key={category.category}
               variants={itemVariants}
