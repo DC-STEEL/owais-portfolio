@@ -10,14 +10,19 @@ const Hero = () => {
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
-    if (index < fullText.length) {
-      const timer = setTimeout(() => {
-        setDisplayText(prev => prev + fullText[index])
-        setIndex(prev => prev + 1)
-      }, 50)
-      return () => clearTimeout(timer)
-    }
-  }, [index, fullText])
+  let timer: ReturnType<typeof setTimeout> | undefined;
+
+  if (index < fullText.length) {
+    timer = setTimeout(() => {
+      setDisplayText(prev => prev + fullText[index]);
+      setIndex(prev => prev + 1);
+    }, 50);
+  }
+
+  return () => {
+    if (timer) clearTimeout(timer);
+  };
+}, [index, fullText]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
