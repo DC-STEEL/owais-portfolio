@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Heart, Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -67,19 +67,12 @@ const Footer = () => {
         <div className="border-t border-slate-200 dark:border-slate-800 pt-8">
           {/* Copyright */}
           <motion.div
-            className="text-center text-slate-600 dark:text-slate-400 flex items-center justify-center gap-2"
+            className="text-center text-slate-600 dark:text-slate-400"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <span>&copy; {currentYear} Owais Mirakar. Made with</span>
-            <motion.div
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            >
-              <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-            </motion.div>
-            <span>using React & Tailwind CSS</span>
+            <span>&copy; {currentYear} Owais Mirakar. All rights reserved.</span>
           </motion.div>
         </div>
       </div>
