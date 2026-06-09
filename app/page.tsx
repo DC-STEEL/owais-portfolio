@@ -9,12 +9,13 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
     // Check for saved theme preference or default to dark
     const isDarkMode = localStorage.getItem('theme') === 'dark' || 
-      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      localStorage.getItem('theme') === null || 
+      window.matchMedia('(prefers-color-scheme: dark)').matches
     setIsDark(isDarkMode)
   }, [])
 
