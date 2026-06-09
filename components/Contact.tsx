@@ -123,7 +123,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/owais',
+      value: 'https://www.linkedin.com/in/owais-mirajkar-9a9414229/',
       href: '#',
     },
     {
