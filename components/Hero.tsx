@@ -6,7 +6,7 @@ import { ChevronDown, ArrowRight } from 'lucide-react'
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('')
-  const fullText = "Full-Stack Odoo Developer & Problem Solver"
+  const fullText = "Odoo Developer"
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
