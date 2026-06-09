@@ -7,8 +7,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/DC-STEEL', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/owais-mirajkar-9a9414229/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:mirakar101@gmail.com', label: 'Email' },
   ]
 
@@ -22,7 +22,7 @@ const Footer = () => {
               Owais Mirakar
             </h3>
             <p className="text-slate-600 dark:text-slate-400">
-              Full-Stack Odoo Developer & Problem Solver
+              Odoo Developer
             </p>
           </motion.div>
 
@@ -51,7 +51,9 @@ const Footer = () => {
                 <motion.a
                   key={label}
                   href={href}
-                  className="p-3 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary-100 dark:hover:bg-primary-900/30 text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary-100 dark:hover:bg-primary-900/30 text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:te[...]"
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={label}
