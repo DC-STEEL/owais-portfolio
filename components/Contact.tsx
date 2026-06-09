@@ -123,14 +123,14 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'https://www.linkedin.com/in/owais-mirajkar-9a9414229/',
-      href: '#',
+      value: 'Owais Mirajkar',
+      href: 'https://www.linkedin.com/in/owais-mirajkar-9a9414229/',
     },
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/owais',
-      href: '#',
+      value: 'DC-STEEL',
+      href: 'https://github.com/DC-STEEL',
     },
   ]
 
@@ -170,6 +170,8 @@ const Contact = () => {
                 <motion.a
                   key={link.label}
                   href={link.href}
+                  target={link.label !== 'Phone' ? '_blank' : undefined}
+                  rel={link.label !== 'Phone' ? 'noopener noreferrer' : undefined}
                   className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group"
                   whileHover={{ x: 5 }}
                 >
@@ -291,7 +293,7 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isLoading}
-                className="w-full px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-lg hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-lg hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cur[...]"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
